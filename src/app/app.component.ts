@@ -24,6 +24,8 @@ export class AppComponent {
 
   formButtonText = 'Add product';
 
+  displayProductForm = false;
+  
   constructor(public productService: ProductService) {
     this.products = this.productService.getProducts();
   }
